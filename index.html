@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.1.0/fabric.js"></script>
+    <script src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Righteous&display=swap" rel="stylesheet">
+    <title>Enter Site</title>
+</head>
+
+<body>
+    <main class="d-none">
+        <div class="canvas-container" style="width: 650px; height: 600px; position: relative; user-select: none;"><canvas id="c" width="650" height="600" style="border: 1px solid rgb(204, 204, 204); position: absolute; width: 650px; height: 600px; left: 0px; top: 0px; touch-action: none; user-select: none;" class="lower-canvas"></canvas><canvas class="upper-canvas " width="650" height="600" style="border: 1px solid rgb(204, 204, 204); position: absolute; width: 650px; height: 600px; left: 0px; top: 0px; touch-action: none; user-select: none; cursor: move;"></canvas></div>
+
+    </main>
+
+
+    <section class="picture">
+        <div class="container">
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <h1 class="picture__header">Выберите фото</h1>-->
+<!--                </div>-->
+<!--                <div class="col-12">-->
+<!--                    <div class="picture__wrapper">-->
+<!--                        <div class="picture__item"><img src="assets/img/pr1.jpg" alt=""></div>-->
+<!--                        <div class="picture__item"><img src="assets/img/pr2.jpg" alt=""></div>-->
+<!--                        <div class="picture__item"><img src="assets/img/pr3.jpg" alt=""></div>-->
+
+<!--                    </div>-->
+
+<!--                </div>-->
+
+<!--            </div>-->
+        </div>
+    </section>
+
+    <section class="text">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="text__wrapper">
+                        <div class="text__header">Заполните данные для вставки в картинку</div>
+
+                        <div class="text__item">
+                            <label for="#text">Впиши дату</label>
+                            <input id="text" type="text" placeholder="26.11.2019">
+
+                        </div>
+
+                        <div class="text__item">
+                            <label for="#text2">Впиши время</label>
+                            <input id="text2" type="text" placeholder="12-30">
+
+                        </div>
+
+                        <div class="text__item">
+                            <label for="#text3">Впиши парк</label>
+                            <input id="text3" type="text" placeholder="Герои парк">
+
+                        </div>
+
+                        <div class="text__item">
+                            <label for="#text4">Имя именинника</label>
+                            <input id="text4" type="text" placeholder="Арсений">
+
+                        </div>
+
+                        <div class="text__item">
+                            <label for="#text5">Имя гостя</label>
+                            <input id="text5" type="text" placeholder="Арсений">
+
+                        </div>
+
+                        <input type="submit" value="Разместить" id="lol">
+
+
+
+                        <div class="text__font d-none">
+                            <div class="txf">
+                                <div id="mask-font" class="mask"></div>
+                                <select id="font" name="font" class="field">
+                                    <option value="albionic">Albionic</option>
+                                    <option value="archangelsk">Archangelsk</option>
+                                    <option value="arial">Arial</option>
+                                    <option value="bankir-retro">Bankir-Retro</option>
+                                    <option value="campus">Campus</option>
+                                    <option value="impact" selected="selected">Impact</option>
+                                    <option value="opensans">Open Sans</option>
+                                    <option value="robotocondensed">Roboto Condensed</option>
+                                    <option value="robotoslab">Roboto Slab</option>
+                                    <option value="telegraphline">TelegraphLine</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="result">
+        <div class="container">
+            <div class="row">
+                <div class="result__block">
+                    <img style="max-width: 100%;" src="assets/img/prtext.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <form id="imageForm" action="pu.php">
+
+                    <input type="submit" value="Скачать">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-------JS-------->
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
